@@ -12,10 +12,14 @@ public class myOqueue1 {
    this.size = n;
     }
 
+
+    // Function to check the Queue is empty or not;
     public static boolean isEmpty() {
         return rear == -1;
     }
 
+
+    // Function method to add the elements on teh Queue;
     public static void add(int data) {
         if(rear== size-1) {
             System.out.println("Full Queu");
@@ -26,6 +30,7 @@ public class myOqueue1 {
       
     }
 
+    // Function to remove the elements from the queue
     public static int remove() {
         if(isEmpty()) {
             return -1;
@@ -41,6 +46,7 @@ public class myOqueue1 {
     }
 
 
+    // function methos for simple to acess the element from the queue
     public static int peek(int i) {
         if(isEmpty()) {
             System.out.println("Que is Empty");
@@ -50,12 +56,15 @@ public class myOqueue1 {
     }
     public static void main(String[] args) {
         System.out.println("Let's start Queue");
+        // Make the new object from the class;
         myOqueue1 q = new myOqueue1(5);
         q.add(1);
         q.add(2);
         q.add(3);
         q.add(4);
         q.add(5);
+
+        // Peek one by one
         int p0 = peek(0);
         int p1= peek(1);
         int p2 = peek(2);

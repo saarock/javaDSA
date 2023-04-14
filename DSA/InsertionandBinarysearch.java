@@ -1,4 +1,4 @@
-public class Binarysearch {
+public class InsertionandBinarysearch {
 //    This ia the selection sort and the binary search;
 //    With the help of the selection sort
     public static void sortTheValue(int[] arr) {
